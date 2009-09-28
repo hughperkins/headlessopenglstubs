@@ -1,6 +1,12 @@
 #include "SDL.h"
 
+int startsystemmilliseconds;
+
+int getsystemmilliseconds();
+void sleepmilliseconds( int milliseconds );
+
 int SDL_Init(Uint32 flagss){
+   startsystemmilliseconds = getsystemmilliseconds();
    return 0;
 }
 
@@ -40,11 +46,11 @@ void SDL_GL_SwapBuffers() {
 }
 
 void SDL_Delay(Uint32 ms ) {
+   sleepmilliseconds(ms);
 }
 
-
 Uint32 SDL_GetTicks(){
-   return 0;
+   return getsystemmilliseconds() - startsystemmilliseconds;
 }
 
 void SDL_WarpMouse(Uint16 x, Uint16 y) {
