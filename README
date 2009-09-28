@@ -1,0 +1,6 @@
+copy these files into the spring/rts directory, after already building
+spring, and run "./build.sh"
+
+it will output 'foo' which you can copy into your game directory, and run
+normally
+
