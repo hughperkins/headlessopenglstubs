@@ -314,7 +314,7 @@ void glBindTexture(GLenum target, GLuint texture) {
 }
 
 void glCompressedTexImage2D( GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data ) {
-     printf("glCompressedTexImage2D\n"); 
+     //printf("glCompressedTexImage2D\n"); 
 }
 
 void glColorPointer( GLint size, GLenum type,
@@ -327,12 +327,12 @@ void glTexParameteri(GLenum target, GLenum pname, GLint param) {
 }
 
 void  glTexParameterf( GLenum target, GLenum pname, GLfloat param ){
-   printf ( "glTexParameterf\n" );
+   //printf ( "glTexParameterf\n" );
 }
 
 void glTexParameterfv(GLenum target, GLenum pname,
                                           const GLfloat *params) {
-   printf(  "glTexParameterfv\n" );
+  // printf(  "glTexParameterfv\n" );
 }
 
 void glTexImage2D(GLenum target, GLint level,
@@ -411,11 +411,11 @@ void glColor4f( GLfloat red, GLfloat green,
 }
 
 void glMultiTexCoord1f( GLenum target, GLfloat s ) {
-   printf("glMultiTexCoord1f\n");
+  // printf("glMultiTexCoord1f\n");
 }
 
 void glMultiTexCoord2f( GLenum target, GLfloat s, GLfloat t ) {
-   printf("glMultiTexCoord2f\n");
+  // printf("glMultiTexCoord2f\n");
 }
 
 GLenum glGetError( void ) {

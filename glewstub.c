@@ -56,40 +56,40 @@ int _glewXWaitVideoSyncSGI (int divisor, int remainder, unsigned int* count){
 
 EXTERN PFNGLCOMPRESSEDTEXIMAGE2DARBPROC __glewCompressedTexImage2DARB;
 void _glCompressedTexImage2DARB( GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void* data ) {
-   printf( "glCompressedTexImage2DARB\n" );
+   //printf( "glCompressedTexImage2DARB\n" );
 }
 
 void __glBindBuffer(GLenum target, GLuint buffer){
-   printf( "glBindBuffer\n" );
+   //printf( "glBindBuffer\n" );
 }
 
 void __glBufferData(GLenum target, GLsizeiptr size, const GLvoid* data, GLenum usage){
-   printf( "glBufferData\n" );
+   //printf( "glBufferData\n" );
 }
 
 GLvoid* __glMapBuffer(GLenum target, GLenum access){
-   printf( "glMapBuffer\n"  );
+   //printf( "glMapBuffer\n"  );
    return 0;
 }
 
 GLboolean __glUnmapBuffer( GLenum target ){
-   printf( "glUnmapBuffer\n"  );
+   //printf( "glUnmapBuffer\n"  );
    return GL_TRUE;
 }
 
 EXTERN PFNGLBINDPROGRAMARBPROC __glewBindProgramARB;
 void _glewBindProgramARB(GLenum target, GLuint program) {
-   printf( "glewBindProgramARB\n"  );
+   //printf( "glewBindProgramARB\n"  );
 }
 
 EXTERN PFNGLCLIENTACTIVETEXTUREARBPROC __glewClientActiveTextureARB;
 void _glewClientActiveTextureARB(GLenum texture) {
-   printf( "glewClientActiveTextureARB\n"  );
+   //printf( "glewClientActiveTextureARB\n"  );
 }
 
 EXTERN PFNGLCLIENTACTIVETEXTUREPROC __glewClientActiveTexture;
 void _glewClientActiveTexture (GLenum texture) {
-   printf( "glewClientActiveTexture\n"  );
+   //printf( "glewClientActiveTexture\n"  );
 }
 
 EXTERN PFNGLBINDFRAMEBUFFEREXTPROC __glewBindFramebufferEXT;
@@ -107,27 +107,27 @@ void _glewFramebufferTexture2DEXT(GLenum target, GLenum attachment, GLenum texta
 
 EXTERN PFNGLMULTITEXCOORD1FPROC __glewMultiTexCoord1f;
 void _glewMultiTexCoord1f(GLenum target, GLfloat s) {
-   printf("__glewMultiTexCoord1f\n");
+   //printf("__glewMultiTexCoord1f\n");
 }
 
 EXTERN PFNGLMULTITEXCOORD2FPROC __glewMultiTexCoord2f;
 void _glewMultiTexCoord2f(GLenum target, GLfloat s, GLfloat t) {
-   printf("__glewMultiTexCoord2f\n");
+   //printf("__glewMultiTexCoord2f\n");
 }
 
 EXTERN PFNGLACTIVETEXTUREARBPROC __glewActiveTextureARB;
 void _glewActiveTextureARB(GLenum texture) {
-   printf( "__glewActiveTextureARB (glActiveTextureARB calls this function for some reason...)\n");
+   //printf( "__glewActiveTextureARB (glActiveTextureARB calls this function for some reason...)\n");
 }
 
 EXTERN PFNGLCOMPRESSEDTEXIMAGE2DPROC __glewCompressedTexImage2D;
 void _glewCompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data) {
-   printf("__glewCompressedTexImage2D\n");
+   //printf("__glewCompressedTexImage2D\n");
 }
 
 EXTERN  PFNGLMULTITEXCOORD2FARBPROC __glewMultiTexCoord2fARB;
 void _glewMultiTexCoord2fARB(GLenum target, GLfloat s, GLfloat t) {
-   printf("__glewMultiTexCoord2fARB\n");
+   //printf("__glewMultiTexCoord2fARB\n");
 }
 
 GLenum glewInit(){
