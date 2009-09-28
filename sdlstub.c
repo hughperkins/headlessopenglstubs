@@ -74,7 +74,7 @@ void SDL_SetModState(SDLMod i) {
 }
 
 int SDL_PollEvent(SDL_Event *event) {
-   printf("PollEvent\n");
+ //  printf("PollEvent\n");
    return 0;
 }
 
